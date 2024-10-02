@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    user-select: none;
+}
+header {
+    text-align: center;
+    background: #eff;
+    box-shadow: 0px 0px 5px darkgray;
+}
+a {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover {
+    color: darkgray;
+}
+#title {
+    font-family: "Erica One", Verdana, sans-serif;
+    font-size: 3em;
+    margin: 0px 0px 2px 0px;
+}
+#content {
+    margin: 10px;
+    max-width: 1200px;
+}
+#main {
+    margin-top: 10px;
+}
+#search {
+    margin-bottom: 10px;
+    padding: 3px;
+    width: calc(100% - 20px);
+}
+.col {
+    float: left;
+}
+.col:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#sticky {
+    float: left;
+    width: 66.66%;
+    position: relative;
+    transition: top 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    margin-top: 36px;
+}
+.btn {
+    background: #1cf;
+    color: white;
+    font-family: Montserrat, Verdana, sans-serif;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    margin: 0px 10px 5px 0px;
+    display: flex;
+    flex-grow: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn.dark {
+    filter: brightness(90%);
+}
+.btn:hover {
+    background: #1ad;
+    filter: none;
+}
+.btn span {
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+.btn span:first-child {
+    margin-left: auto;
+}
+.btn.selected {
+    background: #f44;
+}
+.btn.selected:hover {
+    background: #d22;
+}
+.btn.play {
+    background: #1d2;
+}
+.btn.play:hover {
+    background: #1b2;
+}
+.lbl {
+	font-family: Montserrat, Verdana, sans-serif;
+	margin: 0px 0px 5px 0px;
+}
+#newsdisp div {
+    font-family: Montserrat, Verdana, sans-serif;
+    text-align: justify;
+	margin-bottom: 10px;
+}
+#newsdisp > .btn {
+    width: 50%;
+    margin-bottom: 5px;
+}
+#newsdisp {
+    margin-left: 5px;
+	width: 100%;
+}
+ul {
+    padding: 0px 25px;
+    list-style: circle;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+#newsdisp ul {
+    margin-top: 5px;
+}
+.fixedbtn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px darkgray;
+    cursor: pointer;
+    background: white;
+    transition: background 0.1s ease-in-out;
+}
+.fixedbtn span {
+    position: relative;
+    top: -1px;
+}
+.fixedbtn:hover {
+    background: #eee;
+}
+#tags {
+    margin: 8px 8px 0px 0px;
+    font-family: Roboto, Tahoma, sans-serif;
+    font-size: .85em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#tags .fas {
+    color: #148;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+#tags .tag {
+    background: #ade;
+    padding: 2px 4px;
+    border-radius: 10px;
+    text-decoration: underline;
+    color: #148;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#tags .tag:hover {
+    background: #bde;
+    color: #347;
+}
+#tags .report {
+    color: salmon;
+    cursor: pointer;
+}
+#tags .report:hover {
+    color: darksalmon;
+}
+#tags .link {
+    color: gray;
+    cursor: pointer;
+}
+#tags .link:hover {
+    color: darkgray;
+}
+#clearsearch {
+    position: absolute;
+    top: 6px;
+    right: 17px;
+    cursor: pointer;
+    color: darkgray;
+}
+#gamename {
+    font-size: 1.2em;
+}
+#gamename.big {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+details {
+    font-size: .9em;
+    margin-top: 5px;
+    margin-right: 10px !important;
+    float: right;
+    text-align: right !important;
+}
+.gotd {
+	background: white;
+	width: 50%;
+	border-radius: 5px;
+	padding: 5px 7px;
+	box-shadow: 2px 2px 5px darkgray;
+	cursor: pointer;
+}
+.gotd .btn {
+	margin: 5px 2px !important;
+}
+.gotd:hover .btn {
+    background: #1ad;
+    filter: none;
+}

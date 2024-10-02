@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+</html>
+<title>AGGames</title><link rel="icon" href="thumbs/logo.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Erica%20One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="title">AG Games</h1>
+</header>
+<div id="content">
+    <div class="col" style="width: 33.33%;">
+        <div style="position: relative;">
+            <input type="text" id="search" placeholder="Search" oninput="refresh_main();" spellcheck="false">
+            <span id="clearsearch" class="fas fa-xmark" onclick="clear_search(true);" style="display: none;"></span>
+        </div>
+        <div id="categories" style="width: 100%;"><div class="btn category" data-index="0">1v1.LOL</div><div class="btn category" data-index="1">2048<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="2">Among Us<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="3">Angry Birds<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="4">Bejeweled</div><div class="btn category" data-index="5">BitLife</div><div class="btn category" data-index="6">Bloons Tower Defense<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="7">Bloxorz<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="8">Boggle</div><div class="btn category" data-index="9">Boxel Rebound</div><div class="btn category" data-index="10">Bubble Shooter</div><div class="btn category" data-index="11">Burger Time</div><div class="btn category" data-index="12">Celeste Classic<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="13">Chess</div><div class="btn category" data-index="14">Chrome Dino Game</div><div class="btn category" data-index="15">Chronotron<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="16">City Blocks</div><div class="btn category" data-index="17">CodeFizz</div><div class="btn category" data-index="18">Color Switch<span class="fas fa-list-ul" title="Collection of games"></span><span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="19">Connect 4</div><div class="btn category" data-index="20">Cookie Clicker</div><div class="btn category" data-index="21">Cooking Mama<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="22">Crossy Road<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span><span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="23">Cubefield<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="24">Cut the Rope<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="25">Dominoes</div><div class="btn category" data-index="26">Donkey Kong Country</div><div class="btn category" data-index="27">Doodle Jump</div><div class="btn category" data-index="28">Dots and Boxes<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="29">Dragonball Z: Supersonic Warriors</div><div class="btn category" data-index="30">Duck Life<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="31">Dumb Ways to Die</div><div class="btn category" data-index="32">Factory Balls<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="33">Fast Math</div><div class="btn category" data-index="34">Fire Emblem</div><div class="btn category" data-index="35">Fireboy And Watergirl</div><div class="btn category" data-index="36">Five Nights at Freddy's</div><div class="btn category" data-index="37">Flappy Bird</div><div class="btn category" data-index="38">Friday Night Funkin</div><div class="btn category" data-index="39">Frogger<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="40">Frogger Advance</div><div class="btn category" data-index="41">Frogger's Adventures</div><div class="btn category" data-index="42">Geometry Dash<span class="fas fa-list-ul" title="Collection of games"></span><span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="43">Geometry Dash Mobile<span class="fas fa-list-ul" title="Collection of games"></span><span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="44">Getting Over It<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="45">Google Doodle Games<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="46">Google Snake Game</div><div class="btn category" data-index="47">Goose Game</div><div class="btn category" data-index="48">Guess the Number</div><div class="btn category" data-index="49">Haunt the House</div><div class="btn category" data-index="50">Henry Stickmin<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="51">Hextris</div><div class="btn category" data-index="52">Hill Climb Racing<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="53">Jetpack Joyride</div><div class="btn category" data-index="54">Johnny Trigger</div><div class="btn category" data-index="55">Kirby and the Amazing Mirror</div><div class="btn category" data-index="56">Kirby: Nightmare in Dreamland</div><div class="btn category" data-index="57">Learn To Fly<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="58">Little Alchemy</div><div class="btn category" data-index="59">Mario and Luigi: Superstar Saga</div><div class="btn category" data-index="60">Mario Kart: Super Circuit</div><div class="btn category" data-index="61">Mario Party Advance</div><div class="btn category" data-index="62">Mario vs Donkey Kong</div><div class="btn category" data-index="63">Meat Boy<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="64">Metroid Fusion</div><div class="btn category" data-index="65">Minecraft<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="66">Mini Golf</div><div class="btn category" data-index="67">Monopoly</div><div class="btn category" data-index="68">Mortal Kombat</div><div class="btn category" data-index="69">Moto X3M<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="70">Mr Splibox<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="71">Number Drop</div><div class="btn category" data-index="72">Number Maze</div><div class="btn category" data-index="73">Othello / Reversi</div><div class="btn category" data-index="74">Pac-Man</div><div class="btn category" data-index="75">Pac-Man World</div><div class="btn category" data-index="76">Papa Louie</div><div class="btn category" data-index="77">Papa's Games<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="78">Paper.io</div><div class="btn category" data-index="79">Parking Fury</div><div class="btn category" data-index="80">Pokemon GBA<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="81">Power Blocks</div><div class="btn category" data-index="82">Practice DKT</div><div class="btn category" data-index="83">PvP Dodgeball</div><div class="btn category" data-index="84">Raft Wars<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="85">Rat-A-Tat Cat</div><div class="btn category" data-index="86">Rolling Sky<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="87">Run<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="88">Shift<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="89">Slither.io<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="90">Slope</div><div class="btn category" data-index="91">Slot Car Racing</div><div class="btn category" data-index="92">Snakes And Ladders</div><div class="btn category" data-index="93">Sonic Advance</div><div class="btn category" data-index="94">Space Is Key<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="95">Spelunky</div><div class="btn category" data-index="96">Stacker</div><div class="btn category" data-index="97">Subway Surfers</div><div class="btn category" data-index="98">Super Mario 63<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="99">Super Mario 64</div><div class="btn category" data-index="100">Super Mario Advance<span class="fas fa-list-ul" title="Collection of games"></span></div><div class="btn category" data-index="101">Super Mario Bros.</div><div class="btn category" data-index="102">Super Mario Flash<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="103">Super Mario Maker<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="104">Super Monkey Ball Jr.</div><div class="btn category" data-index="105">Super Smash Flash<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="106">Superhot</div><div class="btn category" data-index="107">Tank Trouble</div><div class="btn category" data-index="108">Teenage Mutant Ninja Turtles</div><div class="btn category" data-index="109">Temple Run</div><div class="btn category" data-index="110">Tetris</div><div class="btn category" data-index="111">Texas Hold'em Poker</div><div class="btn category" data-index="112">The Impossible Quiz</div><div class="btn category" data-index="113">The Legend of Zelda</div><div class="btn category" data-index="114">The Simpsons: Road Rage</div><div class="btn category" data-index="115">The World's Hardest Game</div><div class="btn category" data-index="116">There Is No Game</div><div class="btn category" data-index="117">Tic Tac Toe</div><div class="btn category" data-index="118">Tiles of the Simpsons<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="119">Time Sphere</div><div class="btn category" data-index="120">Tron</div><div class="btn category" data-index="121">Truck Loader</div><div class="btn category" data-index="122">Ultimate Flash Sonic<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="123">Undertale<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="124">Unfair Mario<span class="fas fa-ban" title="In-browser fullscreen mode not available"></span></div><div class="btn category" data-index="125">Uno<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category selected" data-index="126">Vex</div><div class="btn category" data-index="127">Wall Powerful</div><div class="btn category" data-index="128">WarioWare</div><div class="btn category" data-index="129">Whack-A-Mole<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div><div class="btn category" data-index="130">Wordle</div><div class="btn category" data-index="131">Zuma<span class="fas fa-triangle-exclamation" title="Unauthentic game"></span></div></div>
+    </div>
+    <div id="sticky" style="top: 669.333px;">
+        <div id="gamename" class="lbl"></div>
+        <div id="games" class="col" style="width: 50%;"><div class="btn game selected" data-index="Vex 8">Vex 8<span class="fas fa-expand" title="Fullscreen"></span></div><div class="btn game" data-index="Vex 6">Vex 6<span class="fas fa-expand" title="Fullscreen"></span></div><div id="tags"><span class="fas fa-link link" title="Copy link to this game"></span><span class="fas fa-flag report" title="Report a broken game"></span><span class="fas fa-tag"></span><span class="tag">challenging</span><span class="tag">platformer</span></div></div>
+        <div id="buttons" class="col" style="width: 50%;"><div class="btn play" data-index="0">Play: Fullscreen<span class="fas fa-expand" title="Fullscreen"></span></div></div>
+    </div>
+</div>
+<div id="news" style="display: none;">
+    <!--<div class="gotd" onclick="category_link(''); select_game('');">-->
+    <div class="gotd" onclick="category_link('Vex');">
+        Game of the Day
+        <div class="btn">
+            Coming Soon (In Beta 1.1)
+            <span class="fas fa-star" title="Game of the Day"></span>
+        </div>
+    </div>
+    <div><link rel="stylesheet" href=""></div>
+    <div>Added a button next a game's tags for reporting games which have been blocked</div>
+    <div>Added <a onclick="category_link(this);">Parking Fury</a> games</div>
+    <div>Added <a onclick="category_link(this);">Haunt the House</a></div>
+    <div>Added <a onclick="category_link(this);">Truck Loader</a> and <a onclick="category_link(this);">Texas Hold'Em Poker</a></div>
+    <div>Added fullscreen versions of all the <a onclick="category_link(this);">Papa's Games</a> as well as more <a onclick="category_link(this);">Bloons Tower Defense</a> games</div>
+    <div>Added a 'show controls' button for some games</div>
+    <div>Added Gameboy Advance games, indicated by a controller icon</div>
+    <div>Added an authentic version of <a onclick="category_link(this);">Subway Surfers</a></div>
+    <div>Categories will show a warning icon if they are unauthentic</div>
+    <div>New AGGames Website <a href="#">aggames.odoo.com</a>(Work In Progress)</div>
+    <div>Version: Beta 1.0 (restricted access)</div>
+</div>
+<div id="help" style="display: none;">
+    <div>Click on a button on the left to select a category. From there, you can select a game from the set of buttons
+        which appear in the middle column.</div>
+    <div>Games have different types, indicated by icons on the buttons. Types include fullscreen, unblocked, scratch,
+        turbowarp, flash archive, and gameboy. Hover over an icon to see its name if you can't tell by looking at it.</div>
+    <div>Search for games using the <a onclick="jump_to_search();">search bar</a> above the category list. Games will not
+        be included if the search term does not appear in any of the category name, tags, or game types. Combine multiple
+        keywords by separating them with a comma followed by a space, <a onclick="search_tag('obstacles, autoscroll, classic');">
+        like this</a>.</div>
+    <div>Tags for the selected category are shown underneath the game list. Click on one to enter it into the search
+        bar.</div>
+    <div>Click on the link icon to the left of the tags to embed the selected game into the URL. Then, you can copy the
+        URL to bookmark the selected game or share it with friends.</div>
+    <div>
+        <u class="gbacontrolslbl">Gameboy Controls</u>
+        <ul>
+            <li>Start - Enter</li>
+            <li>Select - Shift</li>
+            <li>D pad - Arrows/WASD</li>
+            <li>A - X/K/Space</li>
+            <li>B - Z/L</li>
+            <li>L - Q/I</li>
+            <li>R - E/O</li>
+            <li>Raise volume - =</li>
+            <li>Lower volume - -</li>
+            <li>Reset volume - 0</li>
+            <li>Increase speed - ]</li>
+            <li>Decrease speed - [</li>
+            <li>Reset speed - \</li>
+        </ul>
+    </div>
+</div>
+<div id="report" style="display: none;">
+    <div>Category</div>
+    <div><input type="text" id="reportcategory" spellcheck="false" size="30" disabled=""></div>
+    <div>Game</div>
+    <div><input type="text" id="reportgame" spellcheck="false" size="30" disabled=""></div>
+    <div class="inline btn selected" id="reportbtn">
+        Report
+        <span class="fas fa-flag" title="Report"></span>
+    </div>
+    <div class="inline btn" id="reportcancelbtn">
+        Cancel
+    </div>
+</div>
+<div class="fixedbtn" onclick="jump_to_search();" title="Search (/)">
+    <span class="fas fa-magnifying-glass" style="left: -1px;"></span>
+</div>
+<div class="fixedbtn" onclick="random_game();" style="right: 65px;" title="Random game">
+    <span class="fas fa-dice" style="left: -2px;"></span>
+</div>
+<div class="fixedbtn" onclick="display_content('News', 'news');" style="right: 115px;" title="News">
+    <span class="fas fa-newspaper"></span>
+</div>
+<div class="fixedbtn" onclick="display_content('Help', 'help');" style="right: 165px;" title="Help">
+    <span class="fas fa-question" style="left: 4px;"></span>
+</div>
+<script src="gamedata.js"></script>
+<script src="loader.js"></script>
+
+
+</body>
+</html>
